@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
-  height: 50vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +32,10 @@ export const Card = styled.div`
   &:hover{
   box-shadow: 0px 0px 20px 0px #66666630;
   
+  }
+
+  @media screen and (max-width: 1000px){
+    width: 100%;
   }
   `;
 export const Text = styled.p`

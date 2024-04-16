@@ -1,6 +1,8 @@
 import React from 'react';
+
 import { Card, CardContainer, Container ,TitleCard,Text,Icon} from './styles';
 import { Blur,  GradientText, SecondaryTitle } from '../home/styles';
+
 import { BsLightningCharge } from "react-icons/bs";
 import { MdOutlineVerifiedUser } from "react-icons/md";
 import { FiUser } from "react-icons/fi";

@@ -10,17 +10,16 @@ export const Container = styled.section`
   flex-direction: column;
 
   @media screen and (max-width: 1000px){
-    background-color: green;
-  }
+justify-content: center;
+}
 `
 
 export const Blur = styled.div`
   height: 150px;
   width: 150px;
   position: absolute;
-  top: -75px;
   background: rgb(255,113,215);
-  opacity: 0.3;
+  opacity: 0.7;
   background: linear-gradient(135deg, #ff71d7 0%, #faa0bf 50%, #f7b750 100%);
   z-index: -1;
   filter: blur(100px);
@@ -44,8 +43,12 @@ export const Image = styled.img`
   z-index: -1;
   opacity: 0.4;
   top: -250px;
+  @media screen and (max-width: 1000px){
+    width: 75%;
+justify-content: center;
+}
 `
-export const GetStartedButton = styled(Button)`
+export const GradientButton = styled(Button)`
   background: #ff71d7;
   background: linear-gradient(135deg, #ff71d7 0%, #faa0bf 50%, #f7b750 100%);
   color: var(--white);
@@ -56,6 +59,6 @@ export const GetStartedButton = styled(Button)`
   margin-top: 25px;
   cursor: pointer;
     &:hover{
-  gap:10px;
+      opacity: 0.9;
 }
 `

@@ -18,10 +18,7 @@ export const Link = styled.a`
     text-decoration: none;
     font-size: var(--text-size-2);
     &:hover{
-        background: rgb(255,113,215);
-    background: linear-gradient(135deg, rgba(255,113,215,1) 0%, rgba(250,160,191,1) 50%, rgba(247,183,80,1) 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+        color:var(--zinc-900);
     }
 `
 export const Button = styled.button`
@@ -40,9 +37,25 @@ export const Title = styled.h1`
     display: flex;
     gap: 5px;
     align-items: center;
+
+    @media screen and (max-width: 1000px){
+    left: 50px;
+}
 `
 export const Nav = styled.nav`
     display: flex;
     gap: 50px;
+
+    @media screen and (max-width: 1000px){
+    display: none;
+}
 `
 export const Logo = styled.image
+
+export const ResponsiveButton = styled(Button)`
+    position: absolute;
+
+    right: 50px;
+    background: transparent;
+     color: rgba(255,113,215,1);
+`

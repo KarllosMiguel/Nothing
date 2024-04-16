@@ -1,7 +1,8 @@
 import React from 'react';
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { TbMenuDeep } from "react-icons/tb";
 
-import { Container, Link, Title,Nav } from './styles';
+import { Container, Link, Title,Nav, ResponsiveButton } from './styles';
 import { GradientText } from '../pages/home/styles';
 import Nothing from '../../assets/nothing.jpg';
 const Header = () => {
@@ -11,10 +12,11 @@ const Header = () => {
       <Nav>
         <Link href='#home'>Home</Link>
         <Link href='#services'>Services</Link>
-        <Link href='#section'>Section</Link>
-        <Link href='#'>Link4</Link>
-      </Nav>
-
+        <Link href='#product'>Product</Link>
+      </Nav> 
+      <ResponsiveButton>
+          <TbMenuDeep size={25}/>
+      </ResponsiveButton>
     </Container>
   )
 }

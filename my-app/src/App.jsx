@@ -3,7 +3,8 @@ import GlobalStyle from "./styles/GlobalStyles";
 import Home from "./components/pages/home";
 import Header from "./components/Header";
 import Services from "./components/pages/services";
-import Section from "./components/pages/Section";
+import Product from "./components/pages/product";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       <Header/>
       <Home/>
       <Services/>
-      <Section/>
+      <Product/>
+      <Footer/>
     </>
   );
 }

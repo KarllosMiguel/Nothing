@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     outline: 0;
     border: 0;
 }
+
 :root{
     --text-size:20px;
     --text-size-2:16px;
@@ -45,8 +46,10 @@ const GlobalStyle = createGlobalStyle`
     --zinc-900:#18181B;
 }
 body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
+
+
 
 }
 `
